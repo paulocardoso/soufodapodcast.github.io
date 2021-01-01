@@ -1,0 +1,95 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+body{
+    background: rgb(143,102,210);
+    background: linear-gradient(0deg, rgba(143,102,210,1) 0%, rgba(80,31,211,1) 100%);
+}
+
+footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.main-box {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    clear: both;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10em;
+}
+
+.podcast-image img {
+    max-width: 175px;
+}
+
+.podcast-box-articles {
+    background: rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
+    box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
+    border-radius: 7px;
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    color: white;
+}
+
+.podcast-box-articles-content {
+    padding: 20px;
+    -ms-flex: 8;
+    flex: 8;
+}
+
+.podcast-box-articles-image {
+    margin: 20px 0 20px 20px;
+    flex: 1 80px;
+    position: relative
+}
+  
+
+.bg-light {
+    background-color: #501fd3!important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    color: white!important;
+}
+
+.bd-footer-links {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.bd-footer-links li {
+    display: inline-block;
+}
+
