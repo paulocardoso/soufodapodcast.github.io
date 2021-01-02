@@ -16,18 +16,23 @@ img {
     vertical-align: middle;
 }
 
-body{
-    background: rgb(143,102,210);
-    background: linear-gradient(0deg, rgba(143,102,210,1) 0%, rgba(80,31,211,1) 100%);
+body {
+    background: rgba(84,58,183,1);
+    background: linear-gradient(0deg, rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);
 }
 
-footer{
+footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .site-container {
     width: 75%;
     margin: 0 auto;
+}
+
+.wrapper {
+    background: url("/assets/images/background.svg");
+    background-repeat: no-repeat;
 }
 
 .main-box {
@@ -44,19 +49,18 @@ footer{
     padding: 10em 10em 10em 9em;
 }
 
-  
 .podcast-buttons ul li a i {
-    font-size: 22px; }
-  
+    font-size: 22px;
+}
+
 .podcast-buttons ul {
-    font-size: inherit !important; 
+    font-size: inherit !important;
     display: flex;
     list-style-type: none;
     padding-left: 0rem;
 }
-  
-.podcast-buttons ul li a {
 
+.podcast-buttons ul li a {
     padding: 7px 13px;
     font-weight: 600;
     font-size: 16px;
@@ -64,14 +68,15 @@ footer{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .podcast-buttons ul li a i {
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 
 .podcast-buttons h6 {
@@ -84,8 +89,6 @@ footer{
 .podcast-image img {
     max-width: 175px;
 }
-
-
 
 .podcast-box-article {
     background: rgba(0, 0, 0, 0.45);
@@ -111,17 +114,16 @@ footer{
 .podcast-box-articles-image {
     margin: 20px 0 20px 20px;
     flex: 1 80px;
-    position: relative
+    position: relative;
 }
-  
 
 .bg-light {
-    background-color: #501fd3!important;
+    background-color: rgba(0,172,193,1) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-brand {
-    color: white!important;
+    color: white !important;
 }
 
 .bd-footer-links {
@@ -133,8 +135,7 @@ footer{
     display: inline-block;
 }
 
-.podcast-post{
+.podcast-post {
     max-width: 807px;
     margin: auto;
 }
-
