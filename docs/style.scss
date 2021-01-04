@@ -17,10 +17,10 @@ img {
 }
 
 body {
-    background: rgba(84,58,183,1);
-    background: linear-gradient(0deg, rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);
-    display:flex; 
-    flex-direction:column; 
+    background: rgba(84, 58, 183, 1);
+    background: linear-gradient(0deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    display: flex;
+    flex-direction: column;
 }
 
 .site-container {
@@ -88,35 +88,8 @@ body {
     max-width: 175px;
 }
 
-.podcast-box-article {
-    background: rgba(0, 0, 0, 0.45);
-    -webkit-box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
-    box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
-    border-radius: 7px;
-    padding: 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: wrap;
-    flex-flow: wrap;
-    color: white;
-    margin: 20px;
-}
-
-.podcast-box-articles-content {
-    padding: 20px;
-    -ms-flex: 8;
-    flex: 8;
-}
-
-.podcast-box-articles-image {
-    margin: 20px 0 20px 20px;
-    flex: 1 80px;
-    position: relative;
-}
-
 .bg-default {
-    background-color: rgba(0,172,193,8) !important;
+    background-color: rgba(0, 172, 193, 8) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.41);
 }
 
@@ -124,15 +97,50 @@ body {
     color: white !important;
 }
 
-
 .podcast-post {
-    max-width: 807px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer{
+.slider {
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+
+.post {
+    min-width: 300px;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
+    box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
+    border-radius: 7px;
+    padding: 1em;
+    color: white;
+    margin: 20px;
+}
+
+footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top:auto; 
+    margin-top: auto;
 
     .bd-footer-links {
         padding-left: 0;
@@ -143,8 +151,16 @@ footer{
 
             .links {
                 margin: 5px;
-             }
+            }
         }
     }
-    
+}
+
+
+.btn-full {
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #3ADAAE;
+    border-color: #3ADAAE;
+    color: white;
 }
