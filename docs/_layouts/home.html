@@ -54,22 +54,21 @@
           <div class="slides">
             {% for post in site.posts %}
             <div class="card post">
-              <img src="https://firebasestorage.googleapis.com/v0/b/flowpodcast.appspot.com/o/uploads%2F66434c4f-3b9b-4374-bfdf-9370927fbbb2?alt=media&amp;token=b877bed2-709b-4076-adfe-e14c778cb287" alt="COLDZERA - Flow Podcast #284" class="img-thumbnail img-fluid card-img-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/flowpodcast.appspot.com/o/uploads%2F66434c4f-3b9b-4374-bfdf-9370927fbbb2?alt=media&amp;token=b877bed2-709b-4076-adfe-e14c778cb287"
+                alt="COLDZERA - Flow Podcast #284" class="img-thumbnail img-fluid card-img-top">
               <div class="card-body">
                 <h5 class="card-title text-left"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
-                <div class="card-subtitle">{{ post.excerpt | truncatewords: 20 }}</div>
-                
-                <div class="">
-
+                <div class="card-subtitle"> 
+                  {{ post.excerpt | truncatewords: 20 }}
                 </div>
                 <a href="#" class="btn btn-warning btn-full"><i class="fa fa-spotify"></i> Spotify</a>
                 <a href="#" class="btn btn-warning btn-full"><i class="fa fa-youtube"></i> Youtube</a>
                 <a href="#" class="btn btn-warning btn-full"><i class="fas fa-headphones-alt"></i> Ouvir e Baixar</a>
               </div>
-              <div class="card-footer">
-                {% for tag in post.tags %}
-                <span class="badge bg-dark"> {{tag }}</span>
-                {% endfor %}
+              <div class="card-footer text-end">
+                <small>Last updated 3 mins ago</small>
+
               </div>
             </div>
             {% endfor %}
