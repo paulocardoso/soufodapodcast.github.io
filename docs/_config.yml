@@ -17,11 +17,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
+name: Sou Foda Podcast
 title: Sou foda Podcast
 email: contato@soufodapodcast.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Pod Cast
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: soufodapodcast
