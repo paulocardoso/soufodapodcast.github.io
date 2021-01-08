@@ -17,14 +17,14 @@
 </head>
 
 <body>
+
   <div class="wrapper">
     {% include navbar.html %}
     <div class="container">
       <div class="site-container clearfix">
         <div class="main-box">
           <div class="podcast-image">
-            <img src="https://www.2035themes.com/fastcast/wp-content/uploads/2019/02/fastcast-podcast-cover-image.png"
-              alt="Podcast Image">
+            <img src="{{ site.baseurl }}/assets/images/logo.svg" alt="Podcast Image" width="200" height="200">
           </div>
           <div class="podcast-buttons">
             <h6 clkas>Escute em</h6>
@@ -59,7 +59,7 @@
                 alt="COLDZERA - Flow Podcast #284" class="img-thumbnail img-fluid card-img-top">
               <div class="card-body">
                 <h5 class="card-title text-left"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
-                <div class="card-subtitle"> 
+                <div class="card-subtitle">
                   {{ post.excerpt | truncatewords: 20 }}
                 </div>
                 <a href="#" class="btn btn-warning btn-full"><i class="fa fa-spotify"></i> Spotify</a>
@@ -76,8 +76,8 @@
         </div>
       </div>
     </div>
+    {% include footer.html %}
   </div>
-  {% include footer.html %}
 </body>
 
 </html>

@@ -44,7 +44,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 10em 10em 10em 9em;
+    padding: 4em 2em 0em 2em;
 }
 
 .podcast-buttons ul li a i {
@@ -84,13 +84,17 @@ body {
     color: white;
 }
 
+.podcast-image {
+    border-radius: 25px;
+}
+
 .podcast-image img {
-    max-width: 175px;
+    width: 200px;
+    height: 200px;
 }
 
 .bg-default {
     background-color: rgba(0, 172, 193, 8) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.41);
 }
 
 .navbar-brand {
@@ -101,6 +105,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 6em;
 }
 
 .slider {
@@ -163,4 +168,23 @@ footer {
     background-color: #3ADAAE;
     border-color: #3ADAAE;
     color: white;
+}
+
+.icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    small {
+        background-color: black;
+        color: white;
+        padding: 2px 7px 2px 7px;
+        
+    }
+}
+
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.41);
 }
