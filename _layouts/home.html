@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+  {% include meta.html %}
+  <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title=" Sou Foda {{ site.description }}"
+    href="{{ site.baseurl }}/feed.xml" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="{{ site.baseurl }}/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    {% include navbar.html %}
+    <div class="container">
+      <div class="site-container clearfix">
+        <div class="main-box">
+          <div class="podcast-image">
+            <img src="{{ site.baseurl }}/assets/images/logo.svg" alt="Podcast Image" width="200" height="200">
+          </div>
+          <div class="podcast-buttons">
+            <h6 clkas>Assista em</h6>
+            <ul>
+              <li>
+                <a href="https://www.twitch.tv/soufodapodcast">
+                  <i class="fab fa-twitch"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC-rA16wXdYhTGuoA9ne0gJw"><i class="fab fa-youtube"></i></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="podcast-post">
+        <div class="slider">
+          <div class="slides">
+            <div class="card post">
+              <img
+                src="{{ site.baseurl }}/assets/convidados/leofaria/thump.png"
+                alt="COLDZERA - Flow Podcast #284" class="img-thumbnail img-fluid card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-left"><a href="{{ site.baseurl }}">Leo Faria</a></h5>
+                <div class="card-subtitle">
+                  {{ post.excerpt | truncatewords: 20 }}
+                </div>
+
+              </div>
+              <div class="card-footer text-end">
+                <a href="https://www.twitch.tv/soufodapodcast" class="btn btn-warning btn-full"><i class="fa fa-twitch"></i> Spotify</a>
+                <a href="https://www.youtube.com/channel/UC-rA16wXdYhTGuoA9ne0gJw" class="btn btn-warning btn-full"><i class="fa fa-youtube"></i> Youtube</a>
+              </div>
+              <div class="card-footer text-end">
+                <small>{{ post.date | date_to_long_string }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </div>
+</body>
+
+</html> 
