@@ -133,7 +133,7 @@ body {
 
 .post {
     min-width: 300px;
-    margin: 5px;
+    margin: 0px auto!important;
     background: rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
     box-shadow: 0 -4px 13px 0 rgba(10, 4, 16, 0.2);
@@ -187,4 +187,8 @@ footer {
 
 header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.41);
+}
+
+.card-img-top{
+    max-width: 400px;
 }
