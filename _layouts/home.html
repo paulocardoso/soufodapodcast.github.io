@@ -55,25 +55,28 @@
       <div class="podcast-post">
         <div class="slider">
           <div class="slides">
+            {% for post in site.posts %} 
+            
             <div class="card post">
               <img
-                src="{{ site.baseurl }}/assets/convidados/leofaria/leandro_faria_stories.png"
-                alt=" Leo Faria - Soufoda Podcast #1" class="img-thumbnail img-fluid card-img-top">
+                src="{{ site.baseurl }}/assets/convidados/{{post.picture}}/thump.png"
+                alt="{{ post.title }}" class="img-thumbnail img-fluid card-img-top">
               <div class="card-body">
-                <h5 class="card-title text-left"><a href="https://www.instagram.com/lhfaria/">Leo Faria - @lhfaria</a></h5>
+                <h5 class="card-title text-left"><a href="https://www.instagram.com/{{ post.instagram }}/">{{ post.title }} - @{{ post.instagram }}</a></h5>
                 <div class="card-subtitle">
                   {{ post.excerpt | truncatewords: 20 }}
                 </div>
 
               </div>
               <div class="card-footer text-end">
-                <a href="https://www.twitch.tv/soufodapodcast" class="btn btn-warning btn-full"><i class="fa fa-twitch"></i> Twitch</a>
-                <a href="https://www.youtube.com/channel/UC-rA16wXdYhTGuoA9ne0gJw" class="btn btn-warning btn-full"><i class="fa fa-youtube"></i> Youtube</a>
+                <a href="{{ post.twitch }}" class="btn btn-warning btn-full"><i class="fa fa-twitch"></i> Twitch</a>
+                <a href="{{ post.youtube }}" class="btn btn-warning btn-full"><i class="fa fa-youtube"></i> Youtube</a>
               </div>
               <div class="card-footer text-end">
-                <small>{{ post.date | date_to_long_string }}</small>
+                
               </div>
             </div>
+            {% endfor %}
           </div>
         </div>
       </div>
