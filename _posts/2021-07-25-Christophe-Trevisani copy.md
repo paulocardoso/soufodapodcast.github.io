@@ -6,5 +6,5 @@ categories: podcast
 youtube: https://www.youtube.com/watch?v=Gwy527On6R8
 twitch:
 instagram: chrisbhmg
-picture: christophe-trevisani
+picture: "002"
 ---

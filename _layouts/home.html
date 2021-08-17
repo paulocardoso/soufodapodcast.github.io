@@ -54,9 +54,9 @@
 
       <div class="podcast-post">
         <div class="slider">
-          <div class="slides">
+          <div class="row">
             {% for post in site.posts %} 
-            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
             <div class="card post">
               <img
                 src="{{ site.baseurl }}/assets/convidados/{{post.picture}}/thump.png"
@@ -76,6 +76,7 @@
                 
               </div>
             </div>
+          </div>
             {% endfor %}
           </div>
         </div>
