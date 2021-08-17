@@ -86,13 +86,12 @@ body {
 
 .podcast-image {
     border-radius: 25px;
-}
 
-.podcast-image img {
-    width: 200px;
-    height: 200px;
+    img {
+        width: 180px;
+        height: 200px;
+    }
 }
-
 .bg-default {
     background-color: rgba(0, 172, 193, 8) !important;
 }
@@ -171,8 +170,8 @@ footer {
 }
 
 .icon {
-    width: 30px;
-    margin-right: 10px;
+    width: 67px;
+    margin-right: 1px
 }
 
 .navbar-brand {
